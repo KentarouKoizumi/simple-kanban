@@ -71,3 +71,20 @@ export default defineConfig([
   },
 ])
 ```
+
+## Deploy to GitHub Pages
+
+This project is configured to deploy automatically to GitHub Pages with GitHub Actions.
+
+1. Push this repository to GitHub.
+2. Open `Settings > Pages`.
+3. Set `Build and deployment > Source` to `GitHub Actions`.
+4. Push to `main` (or run the `Deploy static content to Pages` workflow manually).
+
+The workflow file is:
+- `.github/workflows/deploy.yml`
+- Uses Bun for CI build (`bun install --frozen-lockfile` and `bun run build`).
+
+`vite.config.ts` automatically sets `base` for GitHub Pages builds:
+- `/<repo>/` for project pages (for example `username.github.io/repo`).
+- `/` for user/organization pages (`*.github.io` repository).
