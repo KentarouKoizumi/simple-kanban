@@ -11,7 +11,7 @@ body,
 body {
   margin: 0;
   min-width: 320px;
-  font-family: 'BIZ UDPGothic', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  font-family: 'Noto Sans', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
   line-height: 1.45;
   color: #10213d;
   background: #dbe6f4;
